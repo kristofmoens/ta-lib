@@ -7,5 +7,7 @@ project (talib)
 add_subdirectory (ta_abstract)
 add_subdirectory (ta_common)
 add_subdirectory (ta_func)
+add_subdirectory (tools/ta_regtest)
+add_subdirectory (tools/gen_code)
 
 add_library(ta_lib STATIC $<TARGET_OBJECTS:ta_abstract> $<TARGET_OBJECTS:ta_common>  $<TARGET_OBJECTS:ta_func>)
